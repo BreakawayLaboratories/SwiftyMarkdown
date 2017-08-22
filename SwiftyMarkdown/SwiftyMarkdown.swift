@@ -387,7 +387,11 @@ open class SwiftyMarkdown {
 			fontName = link.fontName
 			attributes[NSForegroundColorAttributeName] = link.color
 		}
-		
+
+        if style == .bold {
+            fontName = bold.fontName
+        }
+        
 		// Fallback to body
 		if let _ = fontName {
 			
