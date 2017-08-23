@@ -386,6 +386,7 @@ open class SwiftyMarkdown {
 		if style == .link {
 			fontName = link.fontName
 			attributes[NSForegroundColorAttributeName] = link.color
+            attributes[NSUnderlineStyleAttributeName] = NSUnderlineStyle.styleSingle.rawValue as AnyObject
 		}
 
         if style == .bold {
